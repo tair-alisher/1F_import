@@ -1,0 +1,46 @@
+<GenericData xmlns:generic="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/generic" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:compact="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/compact" xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:query="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:utility="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/utility" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd">
+  <Header>
+    <ID>%ID%</ID>
+    <Test>false</Test>
+    <Truncated>false</Truncated>
+    <Prepared>2018-03-22T15:37:59</Prepared>
+    <Sender id="%SENDER%" />
+    <Receiver id="%REC%" />
+  </Header>
+  <DataSet>
+    <generic:KeyFamilyRef>aba91832-37d7-46c4-a146-a303152f944c</generic:KeyFamilyRef>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="SLUJ" concept="SECT" />
+        <generic:Value value="PUCK_NUMBER" concept="POKAZATELI" />
+        <generic:Value value="Q" concept="TIME_PERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%NP%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="SLUJ" concept="SECT" />
+        <generic:Value value="PRIZ_OTV" concept="POKAZATELI" />
+        <generic:Value value="Q" concept="TIME_PERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%PR_OTV%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="SLUJ" concept="SECT" />
+        <generic:Value value="METOD_UCHETA" concept="POKAZATELI" />
+        <generic:Value value="Q" concept="TIME_PERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%M_YCH%" />
+      </generic:Obs>
+    </generic:Series>
+  </DataSet>
+</GenericData>

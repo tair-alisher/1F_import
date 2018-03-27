@@ -1,0 +1,758 @@
+<GenericData xmlns:generic="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/generic" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:compact="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/compact" xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:query="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:utility="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/utility" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd">
+  <Header>
+    <ID>%ID%</ID>
+    <Test>false</Test>
+    <Truncated>false</Truncated>
+    <Prepared>2018-03-22T15:37:59</Prepared>
+    <Sender id="%SENDER%" />
+    <Receiver id="%REC%" />
+  </Header>
+  <DataSet>
+    <generic:KeyFamilyRef>f06126c8-e752-4654-a414-9230b4d5611e</generic:KeyFamilyRef>
+    <generic:Attributes>
+      <generic:Value value="TYS_COMOV" concept="UNIT" />
+    </generic:Attributes>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P46%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P47%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_SRTOV" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P48%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_SRTOV" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P49%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P50%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P51%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_SYRMAT" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P52%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_SYRMAT" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P53%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_PLFAB" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P54%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_PLFAB" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P55%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_PTR" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P56%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_PTR" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P57%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_ENRG" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P58%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_ENRG" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P59%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_GSM" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P60%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_GSM" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P61%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_DRMZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P62%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_DRMZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_MZ" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P63%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_FOT" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P64%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_FOT" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P65%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="TRD_SF" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P66%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="TRD_SF" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P67%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="SNA_AMROF" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P68%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="SNA_AMROF" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P69%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_TAXPRV" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P70%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_TAXPRV" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P71%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_TRIP" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P72%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_TRIP" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P73%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_ZAREND" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P74%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_ZAREND" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P75%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_TO" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P76%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_TO" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P77%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_PR_KKD" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P78%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_PR_KKD" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P79%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_VIPRSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P80%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_VIPRSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P81%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P82%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P83%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_TOOF" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P84%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_TOOF" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P85%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXBNK" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P86%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXBNK" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P87%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXREKL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P88%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXREKL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P89%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXPOST" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P90%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXPOST" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P91%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXRZR" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P92%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXRZR" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P93%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXKOMM" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P94%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXKOMM" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P95%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXAYDIT" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P96%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXAYDIT" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P97%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXDRYSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P98%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSX_YSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXDRYSL" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P99%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXRR" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P100%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSX" concept="POKAZATELI_3_1F" />
+        <generic:Value value="FINP_RSXRR" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P101%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_SVPOTER" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P102%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_SVPOTER" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P103%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSP_ENRG" concept="POKAZATELI_3_1F" />
+        <generic:Value value="Q" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P104%" />
+      </generic:Obs>
+    </generic:Series>
+    <generic:Series>
+      <generic:SeriesKey>
+        <generic:Value value="RAZDEL_3_1F" concept="SECT" />
+        <generic:Value value="FINP_RSP_ENRG" concept="POKAZATELI_3_1F" />
+        <generic:Value value="YB" concept="TIMEPERIOD" />
+      </generic:SeriesKey>
+      <generic:Obs>
+        <generic:Time>%TIME%</generic:Time>
+        <generic:ObsValue value="%P105%" />
+      </generic:Obs>
+    </generic:Series>
+  </DataSet>
+</GenericData>
