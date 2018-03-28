@@ -14,8 +14,6 @@ except FileNotFoundError:
     print('no such file. aborted')
     sys.exit()
 
-content = [x.strip() for x in content]
-
 csv = open('sources\\sender_identifiers.py', 'w')
 csv.write('get_sender_id_by_okpo = {')
 csv.write('\n')
@@ -23,19 +21,24 @@ csv.write('\n')
 connection = pypyodbc.connect(con_strings.server)
 cursor = connection.cursor()
 
+content = [x.strip() for x in content]
+
 total = len(content)-1
 iteration = 0
 
-for index, line in enumerate(content, 2):
-    if iteration == 20:
-        break
+for index, line in enumerate(content, 1):
     if index > len(content)-1:
+        print('\nend of file')
         break
 
     iteration += 1
     row = content[index].split(',')
 
-    okpo = row[4]
+    try:
+        okpo = row[4]
+    except IndexError:
+        print('\nend of file')
+        break
 
     SQLCommand = ("SELECT Id as id FROM AspNetUsers WHERE OKPO = ?")
 
@@ -53,5 +56,5 @@ for index, line in enumerate(content, 2):
 
 connection.close()
 
-csv.write('}')
+csv.write('}\n')
 csv.close()
