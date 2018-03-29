@@ -27,7 +27,7 @@ except FileNotFoundError:
     sys.exit()
 
 header = {
-    "%ID%": 'HeaderDataId_RecordId', "%REC%": '', "%SENDER%": '', "%TIME%": constants.period
+    "%REC%": '', "%SENDER%": '', "%TIME%": constants.period
 }
 
 if not Path('results').exists():
