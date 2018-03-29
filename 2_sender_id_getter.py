@@ -28,8 +28,9 @@ iteration = 0
 
 for index, line in enumerate(content, 1):
     if index > len(content)-1:
-        print('\nend of file')
         break
+
+    SQLCommand = "SELECT Id as id FROM AspNetUsers WHERE OKPO = ?"
 
     iteration += 1
     row = content[index].split(',')
@@ -40,7 +41,7 @@ for index, line in enumerate(content, 1):
         print('\nend of file')
         break
 
-    SQLCommand = ("SELECT Id as id FROM AspNetUsers WHERE OKPO = ?")
+    SQLCommand = "SELECT Id as id FROM AspNetUsers WHERE OKPO = ?"
 
     cursor.execute(SQLCommand, [okpo])
     result = cursor.fetchone()
