@@ -1,5 +1,4 @@
 import sys
-from pathlib import Path
 
 
 def get_clean_lines(file):
@@ -27,5 +26,7 @@ def print_success_message(message):
 
 
 def create_dir_if_not_exists(dir_name):
+    from pathlib import Path
+
     if not Path(dir_name).exists():
         Path(dir_name).mkdir()

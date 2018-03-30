@@ -70,7 +70,10 @@ def build_xml_data(lines):
     invalid_soates_log.close()
     output.write('}\n')
     output.close()
-    print_success_message('\ndata file')
+    message = 'data file'
+    if len(lines) > 500:
+        message = '\ndata file'
+    print_success_message(message)
 
 
 def form_static_data():

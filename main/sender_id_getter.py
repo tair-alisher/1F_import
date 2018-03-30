@@ -9,7 +9,11 @@ def build_sender_ids_file(lines):
     write_ids_to_file(cursor, lines)
 
     connection.close()
-    print_success_message('\nsender_identifiers file')
+
+    message = 'sender_identifiers file'
+    if len(lines) > 500:
+        message = '\nsender_identifiers file'
+    print_success_message(message)
 
 
 def write_ids_to_file(cursor, lines):

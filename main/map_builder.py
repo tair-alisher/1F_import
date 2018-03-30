@@ -18,7 +18,6 @@ def write_data_to_file(data):
             output.write(new_line)
 
         print_progress(1, 1)
-
         break
     output.write('}\n')
     output.close()
