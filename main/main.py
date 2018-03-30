@@ -1,4 +1,5 @@
 import sys
+from pathlib import Path
 
 
 def get_clean_lines(file):
@@ -19,3 +20,12 @@ def read_input_file(input_file):
 def remove_white_spaces(lines):
     clean_lines = [x.strip() for x in lines]
     return clean_lines
+
+
+def print_success_message(message):
+    print(message.ljust(110, '.') + 'ok')
+
+
+def create_dir_if_not_exists(dir_name):
+    if not Path(dir_name).exists():
+        Path(dir_name).mkdir()

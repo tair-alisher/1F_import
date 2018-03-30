@@ -1,61 +1,59 @@
-import sys
-import pypyodbc
-from sources.serv import print_progress
-import sources.connection_strings as con_strings
+def build_sender_ids_file(lines):
+    import pypyodbc
+    from main.main import print_success_message
+    import sources.connection_strings as con_strings
 
-file = input('enter the name of the file: ')
+    connection = pypyodbc.connect(con_strings.server)
+    cursor = connection.cursor()
 
-filename = 'input\\%s' % file
+    write_ids_to_file(cursor, lines)
 
-try:
-    with open(filename) as f:
-        content = f.readlines()
-except FileNotFoundError:
-    print('no such file. aborted')
-    sys.exit()
+    connection.close()
+    print_success_message('\nsender_identifiers file')
 
-csv = open('sources\\sender_identifiers.py', 'w')
-csv.write('get_sender_id_by_okpo = {')
-csv.write('\n')
 
-connection = pypyodbc.connect(con_strings.server)
-cursor = connection.cursor()
+def write_ids_to_file(cursor, lines):
+    from sources.serv import print_progress
 
-content = [x.strip() for x in content]
+    csv = open('results\\sender_identifiers.py', 'w')
+    csv.write('get_sender_id_by_okpo = {\n')
 
-total = len(content)-1
-iteration = 0
+    total = len(lines) - 1
+    iteration = 0
 
-for index, line in enumerate(content, 1):
-    if index > len(content)-1:
-        break
+    for index, line in enumerate(lines, 1):
+        if index > len(lines) - 1:
+            break
 
-    SQLCommand = "SELECT Id as id FROM AspNetUsers WHERE OKPO = ?"
+        row = lines[index].split(',')
 
-    iteration += 1
-    row = content[index].split(',')
+        try:
+            okpo = row[4]
+        except IndexError:
+            break
 
+        select_query = """
+        SELECT Id as id
+        FROM AspNetUsers
+        WHERE OKPO = ?
+        """
+
+        cursor.execute(select_query, [okpo])
+
+        identifier = get_identifier_or_empty_string(cursor.fetchone())
+
+        csv.write("    '{0}': '{1}',\n".format(okpo, identifier))
+
+        iteration += 1
+        print_progress(iteration, total)
+
+    csv.write('}\n')
+    csv.close()
+
+
+def get_identifier_or_empty_string(row):
     try:
-        okpo = row[4]
-    except IndexError:
-        print('\nend of file')
-        break
-
-    SQLCommand = "SELECT Id as id FROM AspNetUsers WHERE OKPO = ?"
-
-    cursor.execute(SQLCommand, [okpo])
-    result = cursor.fetchone()
-
-    try:
-        identifier = result['id']
+        sender_id = row['id']
     except TypeError:
-        identifier = ''
-
-    csv.write("    '{0}': '{1}',\n".format(okpo, identifier))
-
-    print_progress(iteration, total)
-
-connection.close()
-
-csv.write('}\n')
-csv.close()
+        sender_id = ''
+    return sender_id
