@@ -50,4 +50,4 @@ input/*.csv
 sources/connection_strings.py
 logs/*.txt
 results/*.py
-database/*.pdl
+database/
