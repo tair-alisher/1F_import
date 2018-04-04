@@ -1,12 +1,14 @@
 def build_map_file(lines):
     from main.main import print_success_message
+    import time
 
+    start = time.time()
     write_data_to_file(lines)
-    print_success_message('map file')
+    print_success_message('map file', time.time() - start)
 
 
 def write_data_to_file(data):
-    from sources.serv import print_progress
+    from main.main import print_progress
 
     output = open('results\\map.py', 'w')
     output.write('hashMap = {\n')

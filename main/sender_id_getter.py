@@ -1,7 +1,10 @@
 def build_sender_ids_file(lines):
+    import time
     import pypyodbc
     from main.main import print_success_message
     import sources.connection_strings as con_strings
+
+    start = time.time()
 
     connection = pypyodbc.connect(con_strings.server)
     cursor = connection.cursor()
@@ -11,13 +14,11 @@ def build_sender_ids_file(lines):
     connection.close()
 
     message = 'sender_identifiers file'
-    if len(lines) > 500:
-        message = '\nsender_identifiers file'
-    print_success_message(message)
+    print_success_message(message, time.time() - start)
 
 
 def write_ids_to_file(cursor, lines):
-    from sources.serv import print_progress
+    from main.main import print_progress
 
     csv = open('results\\sender_identifiers.py', 'w')
     csv.write('get_sender_id_by_okpo = {\n')

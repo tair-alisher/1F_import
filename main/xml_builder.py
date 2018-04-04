@@ -2,16 +2,20 @@ import os
 from pathlib import Path
 
 import sources.db as db
-import sources.constants as constants
+import sources.config as constants
 
 from sources.receiver_identifiers import get_receiver_by_code
 
 
 def build_xml_data(lines):
-    from results.map import hashMap
-    from sources.serv import print_progress
+    import time
+    import importlib
+    import results.sender_identifiers as sender_identifiers
+    import results.map as mapping
+    from main.main import print_progress
     from main.main import print_success_message
-    from results.sender_identifiers import get_sender_id_by_okpo
+
+    start_time = time.time()
 
     header = {"%REC%": '', "%SENDER%": '', "%TIME%": constants.period}
 
@@ -26,6 +30,10 @@ def build_xml_data(lines):
     iteration = 0
 
     invalid_soates_log = open('logs\\invalid_soates.txt', 'w')
+
+    db.Database.drop_db()
+    db.Database.create_db()
+    db.Database.open_db()
 
     for index, line in enumerate(lines, 1):
         if index > len(lines) - 1:
@@ -51,11 +59,14 @@ def build_xml_data(lines):
         except IndexError:
             break
 
-        header['%SENDER%'] = get_sender_id_by_okpo[okpo]
+        sender_identifiers = importlib.reload(sender_identifiers)
+        header['%SENDER%'] = sender_identifiers.get_sender_id_by_okpo[okpo]
 
         sections = form_sections_id_and_template_dictionary(okpo)
         sections = replace_xml_header_keys_with_values(sections, header)
-        sections = replace_xml_body_keys_with_values(sections, hashMap, row)
+
+        mapping = importlib.reload(mapping)
+        sections = replace_xml_body_keys_with_values(sections, mapping.hashMap, row)
 
         add_data_to_xml_table(sections)
 
@@ -64,16 +75,13 @@ def build_xml_data(lines):
 
         iteration += 1
         print_progress(iteration, total)
-
-    db.xml.commit()
+    db.Database.xml.commit()
 
     invalid_soates_log.close()
     output.write('}\n')
     output.close()
     message = 'data file'
-    if len(lines) > 500:
-        message = '\ndata file'
-    print_success_message(message)
+    print_success_message(message, time.time() - start_time)
 
 
 def form_static_data():
@@ -141,11 +149,11 @@ def replace_xml_body_keys_with_values(sections, hash_map, row):
 
 def add_data_to_xml_table(sections):
     for section, xml_content in sections.items():
-        if db.xml(title=section):
-            record = db.xml(title=section)
-            db.xml.update(record, content=xml_content)
+        if db.Database.xml(title=section):
+            record = db.Database.xml(title=section)
+            db.Database.xml.update(record, content=xml_content)
         else:
-            db.xml.insert(title=section, content=xml_content)
+            db.Database.xml.insert(title=section, content=xml_content)
 
 
 def form_dynamic_data(sections, okpo, iteration, soate, sender, code):

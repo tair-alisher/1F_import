@@ -21,8 +21,8 @@ def remove_white_spaces(lines):
     return clean_lines
 
 
-def print_success_message(message):
-    print(message.ljust(110, '.') + 'ok')
+def print_success_message(message, seconds):
+    print("%s %d seconds" % (message.ljust(110, '.'), seconds))
 
 
 def create_dir_if_not_exists(dir_name):
@@ -30,3 +30,16 @@ def create_dir_if_not_exists(dir_name):
 
     if not Path(dir_name).exists():
         Path(dir_name).mkdir()
+
+
+def print_progress(iteration, total, prefix='', suffix='', decimals=1, bar_length=100):
+    str_format = "{0:." + str(decimals) + "f}"
+    percents = str_format.format(100 * (iteration / float(total)))
+    filled_length = int(round(bar_length * iteration / float(total)))
+    bar = '█' * filled_length + '-' * (bar_length - filled_length)
+
+    sys.stdout.write('\rprogress:%s |%s| %s%s %s' % (prefix, bar, percents, '%', suffix)),
+
+    if iteration == total:
+        sys.stdout.write('\n')
+    sys.stdout.flush()
